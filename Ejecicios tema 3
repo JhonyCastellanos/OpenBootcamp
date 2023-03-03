@@ -1,0 +1,33 @@
+public class Main{
+
+  public static void main(String[] args){
+    suma(1, 2, 3);
+  }
+  public static void suma (int a, int b, int c){
+    System.out.println(a+b+c);
+  }
+  
+}
+
+
+public class Main{
+
+  public static void main(String[] args){
+  
+    Coche myCoche = new Coche();
+    myCoche.AgregarPuerta();
+    myCoche.AgregarPuerta();
+    System.out.println("El coche tiene " + myCoche.puertas + " puertas");
+    
+  }
+  
+}
+class Coche {
+
+  public int puertas = 0;
+  
+  public void AgregarPuerta() {
+   this.puertas++;
+  }
+
+}
