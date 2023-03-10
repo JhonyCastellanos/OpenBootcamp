@@ -1,0 +1,44 @@
+public class MyClass {
+    public static void main(String args[]) {
+      
+      Persona persona = new Persona();
+      
+      persona.setEdad(22);
+      persona.setNombre("Jhony Castellanos");
+      persona.setTelefono(320432844);//No entiendo por qué excede el rango?
+      
+      System.out.println(persona.getNombre());
+      System.out.println(persona.getEdad());
+      System.out.println(persona.getTelefono()+"3");
+      
+    }
+}
+
+class Persona{
+
+    private int edad;
+    private String nombre;
+    private long telefono;
+    
+    public int getEdad(){
+        return edad;
+    }
+    public void setEdad(int edad){
+        this.edad = edad;
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    
+    public long getTelefono(){
+        return telefono;
+    }
+    public void setTelefono(long telefono){
+        this.telefono = telefono;
+    }
+    
+}
